@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+    <script src="js/qrcode.js"></script>
+</head>
+<style>
+body {
+    line-height: 19px;
+}
+
+#J_msg {
+    width: 250px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #ff4366;
+    text-align: center;
+    margin: -28px auto 10px;
+}
+
+.color-red {
+    color: #ff4366;
+}
+body{
+	position: relative;
+	width: 500px;
+	overflow: hidden;
+}
+#qrDivHight{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+</style>
+
+<body>
+    <div id="J_msg">1111111</div>
+    <div id="qrDivHight" style="width:320px;height:320px;cursor:pointer;margin-top:20px;display:none;"></div>
+    <table style="width:500px;">
+        <tr>
+            <td width="180">
+                <div id="qrDiv" style="width:160px;height:160px;cursor: pointer;"></div>
+                <p style="font-size:13px;margin-left:0px;">点击二维码,点击有高清哦～</p>
+            </td>
+            <td style="font-size:13px;" width="320">
+                <p>
+                    <span class="color-red">标题:</span>
+                    <br>
+                    <a id="qr_webname" style="width:320px;display:inline-block;"></a>
+                </p>
+                <p>
+                    <span class="color-red">地址:</span>
+                    <br>
+                    <a id="qr_website" style="width:320px;display:inline-block;"></a>
+                </p>
+                <p>
+                    <span class="color-red">自动生成:</span>
+                    <br>
+                    <input id="J_userUrl" placeholder="输入网址或文本" style="width:220px;">
+                    <button id="J_creatQr">生成qrcode</button>
+                </p>
+                <a href="javascript:void(0);" id="qr_a">http://www.ocsen.wang-ocsen制作</a>
+            </td>
+        </tr>
+    </table>
+    <script src="js/qr.js"></script>
+</body>
+
+</html>
